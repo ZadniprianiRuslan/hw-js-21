@@ -1,4 +1,3 @@
-const number = 7;
-for (let i = 1; i <= 10; i += 1) {
-  console.log(`${number} * ${i} = `, number * i);
-}
+const numbers = [1, 2, 3];
+numbers[1] = 10;
+console.log(numbers);

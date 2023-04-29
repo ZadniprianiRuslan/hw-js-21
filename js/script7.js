@@ -1,10 +1,8 @@
-for (let i = 1; i <= 5; i += 1) {
-    console.log(i);
-}
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
-let number = 1;
-
-while (number <= 5) {
-  console.log("counter: ", number);
-  number += 1;
+for (let i = 0; i < numbers.length; i += 1) {
+    if (i % 2 === 0) {
+    continue;
+  }
+  console.log(numbers[i]);
 }

@@ -1,7 +1,5 @@
-for (let i = 1; i <= 100; i += 1) {
-  console.log(i);
+const numbers = [5, 17, 23, 1, 12];
 
-  if (i === 49) {
-    break;
-  }
+for (let i = 0; i < numbers.length; i += 1) {
+  console.log(numbers[i]);
 }
