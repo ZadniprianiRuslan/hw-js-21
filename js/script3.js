@@ -1,14 +1,18 @@
-const styles = ["Джаз", "Блюз"];
-console.log(styles);
+const findLongestWord = function (string) {
+  const words = string.split(" ");
+  let longestWord = "";
+  for (let i = 0; i < words.length; i++) {
+    const word = words[i];
 
-styles.push("Рок-н-ролл");
-console.log(styles);
+    if (word.length > longestWord.length) {
+      longestWord = word;
+    }
+  }
+  return longestWord;
+};
 
-styles.splice(1, 1, "Класика");
-console.log(styles);
+console.log(findLongestWord("The quick brown fox jumped over the lazy dog")); // 'jumped'
 
-const deletedStyle = styles.splice(0, 1);
-console.log(deletedStyle);
+console.log(findLongestWord("Google do a roll")); // 'Google'
 
-styles.splice(0, 0, "Реп", "Реггі");
-console.log(styles);
+console.log(findLongestWord("May the force be with you")); // 'force'
