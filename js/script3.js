@@ -1,18 +1,15 @@
-const findLongestWord = function (string) {
-  const words = string.split(" ");
-  let longestWord = "";
-  for (let i = 0; i < words.length; i++) {
-    const word = words[i];
+function makePizza(pizzaName, callback) {
+  console.log(`Pizza ${pizzaName} is being prepared, please wait...`);
 
-    if (word.length > longestWord.length) {
-      longestWord = word;
-    }
-  }
-  return longestWord;
-};
+  callback(pizzaName);
+}
 
-console.log(findLongestWord("The quick brown fox jumped over the lazy dog")); // 'jumped'
+makePizza("Royal Grand", function deliverPizza(pizzaName) {
+  console.log(`Delivering pizza ${pizzaName}.`);
+});
 
-console.log(findLongestWord("Google do a roll")); // 'Google'
+// Change code below this line
 
-console.log(findLongestWord("May the force be with you")); // 'force'
+makePizza("Ultracheese", function eatPizza(pizzaName) {
+console.log(`Eating pizza ${pizzaName}`);
+});

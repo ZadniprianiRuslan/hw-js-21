@@ -1,25 +1,17 @@
-let input;
-const numbers = [];
-let total = 0;
-
-while (true) {
-  input = prompt("Введіть число");
-  if (input === null) {
-    break;
+const applyCallbackToEachElement = function (arr, callback) {
+const result = [];
+  for (let i = 0; i < arr.length; i++) {
+    result.push(callback(arr[i]));
+  }
+  return result;
   }
 
-  input = Number(input);
+  const arr = [1, 2, 3, 4, 5];
 
-  if (Number.isNaN(input)) {
-    alert("Було введено не число, спробуйте ще раз");
-    continue;
-  }
-  numbers.push(input);
-}
+const squareCallback = function (num) {
+  return num * num;
+};
+ 
+  const result = applyCallbackToEachElement(arr, squareCallback);
 
-if (numbers.length > 0) {
-  for (let number of numbers) {
-    total += number;
-  }
-  console.log(`Загальна сума чисел дорівнює ${total}`);
-}
+console.log(result); // [1, 4, 9, 16, 25]
