@@ -1,34 +1,18 @@
-// function deliverPizza(pizzaName) {
-//   return `Delivering ${pizzaName} pizza.`;
-// }
-
-// function makePizza(pizzaName) {
-//   return `Pizza ${pizzaName} is being prepared, please wait...`;
-// }
-
-// // Change code below this line
-
-// function makeMessage(pizzaName, callback) {
-//     console.log(makePizza(pizzaName));
-//       return callback(pizzaName);
-
-// }
-
-// makeMessage("Royal Grand", makePizza);
-
-const deliverPizza = (pizzaName) => {
-  return `Delivering ${pizzaName} pizza.`;
+const basketProducts = {
+  apples: {
+    price: 15,
+    color: ["red", "green"],
+    market: "Сільпо",
+  },
+  bananas: {
+    price: 18,
+    color: ["red", "yellow"],
+    market: "Сільпо",
+  },
+  peaches: {
+    price: 20,
+    color: ["red", "yellow", "orange"],
+    market: "Сільпо",
+  },
 };
-
-const makePizza = (pizzaName) => {
-  return `Pizza ${pizzaName} is being prepared, please wait...`;
-};
-
-// Change code below this line
-
-const makeMessage = (pizzaName, callback) => {
-  return callback(pizzaName);
-};
-
-const result = makeMessage("Royal Grand", makePizza);
-console.log(result);
+console.log(basketProducts);

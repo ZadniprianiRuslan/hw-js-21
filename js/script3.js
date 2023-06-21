@@ -1,30 +1,57 @@
-// function makePizza(pizzaName, callback) {
-//   console.log(`Pizza ${pizzaName} is being prepared, please wait...`);
+const apartment = {
+  imgUrl: "https://via.placeholder.com/640x480",
+  descr: "Spacious apartment in the city center",
+  rating: 4,
+  price: 2153,
+  tags: ["premium", "promoted", "top"],
+};
+console.log(apartment);
 
-//   callback(pizzaName);
-// }
+apartment.owner = {
+    name: "Henry",
+    phone: "982-126-1588",
+    email: "henry.carter@aptmail.com",
+};
 
-// makePizza("Royal Grand", function deliverPizza(pizzaName) {
-//   console.log(`Delivering pizza ${pizzaName}.`);
-// });
+// const aptRating = apartment.rating;
+// // console.log(aptRating);
+// const aptDescr = apartment.descr;
+// // console.log(aptDescr);
+// const aptPrice = apartment.price;
+// // console.log(aptPrice);
+// const aptTags = apartment.tags;
+// // console.log(aptTags);
 
-// // Change code below this line
+const ownerName = apartment.owner.name;
+// console.log(ownerName);
+const ownerPhone = apartment.owner.phone;
+// console.log(ownerPhone);
+const ownerEmail = apartment.owner.email;
+// console.log(ownerEmail);
+const numberOfTags = apartment.tags.length;
+// console.log(numberOfTags);
+const firstTag  = apartment.tags[0];
+// console.log(firstTag);
+const lastTag = apartment.tags[2];
+// console.log(lastTag);
 
-// makePizza("Ultracheese", function eatPizza(pizzaName) {
-// console.log(`Eating pizza ${pizzaName}`);
-// });
+const aptRating = apartment["rating"];
+// console.log(aptRating);
+const aptDescr = apartment["descr"];
+// console.log(aptDescr);
+const aptPrice = apartment["price"];
+// console.log(aptPrice);
+const aptTags = apartment["tags"];
+// console.log(aptTags);
 
-function makePizza(pizzaName, callback) {
-  console.log(`Pizza ${pizzaName} is being prepared, please wait...`);
-  callback(pizzaName);
-}
+apartment.price = 5000;
+apartment.rating = 4.7;
+apartment.owner.name = "Henry Sibola";
+apartment.tags.push("trusted");
 
-makePizza("Royal Grand", function deliverPizza(pizzaName) {
-  console.log(`Delivering pizza ${pizzaName}.`);
-});
-
-// Change code below this line
-
-makePizza("Ultracheese", (pizzaName) => {
-  console.log(`Eating pizza ${pizzaName}.`);
-});
+apartment.area = 60;
+apartment.rooms = 3;
+apartment.location = {
+  country: "Jamaica",
+  city: "Kingston",
+};

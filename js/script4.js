@@ -1,12 +1,12 @@
-// function showMessage() {
-//   console.log("Hello World!");
-// }
+const name = "Repair Droid";
+const price = 2500;
+const image = "https://via.placeholder.com/640x480";
+const tags = ["on sale", "trending", "best buy"];
 
-// const button = document.getElementById("buttonWord");
-// button.addEventListener("click", showMessage);
-
-const button = document.getElementById("buttonWord");
-
-button.addEventListener("click", () => {
-  console.log("Hello World!");
-});
+const product = {
+    name,
+    price,
+    image,
+    tags,
+};
+console.log(product);
