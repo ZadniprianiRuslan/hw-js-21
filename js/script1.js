@@ -1,8 +1,10 @@
-const myArray = {
-  name: "Ruslan",
-  age: 14,
-  city: "Boryspil",
-  occupation: "",
-};
-console.log(myArray.country);
-console.log(myArray);
+const user = {
+    hobby: "",
+    premium: true,
+}
+console.table(user);
+user.mood = "happy";
+console.table(user);
+user.hobby = "skydiving";
+user.premium = false;
+console.log(user);
