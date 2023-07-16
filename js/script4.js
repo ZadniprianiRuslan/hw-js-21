@@ -29,3 +29,7 @@ const employeesSalary = {
 employeesSalary.countTotalSalary();
 const totalPrize = employeesSalary.countTotalSalary();
 console.log(totalPrize);
+
+
+const copyOfEmployees = [...employeesSalary.employees];
+console.log(copyOfEmployees);

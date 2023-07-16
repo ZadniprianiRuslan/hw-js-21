@@ -28,3 +28,11 @@ const employeesHome = {
 employeesHome.findBestEmployee();
 const bestEmployee = employeesHome.findBestEmployee();
 console.log(bestEmployee);
+
+
+const copyOfEmployees = [...employeesHome.employees];
+console.log(copyOfEmployees);
+
+
+const [employee1, employee2, employee3] = employeesHome.employees;
+console.log(employee1);

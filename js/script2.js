@@ -1,20 +1,26 @@
 const friend = {
-name: "Andrew",
-age: 15,
-hobbie: "Computer games",
+  name: "Andrew",
+  age: 15,
+  hobbie: "Computer games",
 
-countProps() {
+  countProps() {
     const friendKeys = Object.keys(this);
     const quantity = friendKeys.length;
-    return quantity
-    }
-}
+    return quantity;
+  },
+};
 
 const result = friend.countProps();
 console.log(result);
 
-// function countProps(friend) {
-// const friendKeys = Object.keys(friend);
-// const quantity = friendKeys.length;
-// return quantity
-// }
+const {name, age, hobbie,} = friend;
+console.log(hobbie);
+
+// const secondFriend = {
+//   name: "Max",
+//   age: 14,
+// };
+
+// const {name, age, hobbie: sport = "Football"} = secondFriend;
+
+// console.log(sport);

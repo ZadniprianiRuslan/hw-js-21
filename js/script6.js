@@ -35,3 +35,7 @@ const products = [
   
   const totalPriceBanana = calculateTotalPrice(products, "Banana");
   console.log(totalPriceBanana);
+
+
+const listCopy = [...products];
+console.log(listCopy);
