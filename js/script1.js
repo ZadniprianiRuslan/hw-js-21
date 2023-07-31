@@ -1,20 +1,13 @@
-const user = {
-    hobby: "",
-    premium: true,
-}
-user.mood = "happy";
-user.hobby = "skydiving";
-user.premium = false;
-console.log(user);
+// Напишіть функцію, яка отримує масив рядків і повертає новий масив, 
+// в якому кожен з рядків складається з першої та останньої букви відповідної строки вхідного масиву.
 
-const userKeys = Object.keys(user);
-for(const key of userKeys) {
-    console.log(`${key}: ${user[key]}`);
-}
+const array2 = ['apple', 'banana', 'orange', 'banana', 'grape', 'apple', 'kiwi'];
 
-const user2 = { ...user };
-user2.premium = true;
-console.log(user2)
+const newArray = array2.map(word => word.slice(0,1));
+console.log(newArray);
 
-const { hobby, premium, mood } = user;
-console.log(mood);
+const newArray2 = array2.map(word2 => word2.slice(word2.length - 1));
+console.log(newArray2);
+
+const resultArray = [newArray + newArray2];
+console.log(resultArray);
