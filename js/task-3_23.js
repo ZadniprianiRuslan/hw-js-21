@@ -1,18 +1,19 @@
-const Storage = function (items) {
-  this.items = items;
-};
+class Storage {
+  constructor(items) {
+    this.items = items;
+  }
 
-Storage.prototype.getItems = function() {
-  return this.items
-};
+  getItems() {
+    return this.items;
+  }
 
-Storage.prototype.addItem = function(item) {
-  return this.items.push(item)
-};
-
-Storage.prototype.removeItem = function() {
-  return this.items.splice(1, 1)
-};
+  addItem(item) {
+    return this.items.push(item);
+  }
+  removeItem() {
+    return this.items.splice(1, 1);
+  }
+}
 
 const storage = new Storage([
   "Нанітоіди",
